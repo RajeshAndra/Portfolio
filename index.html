@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rajesh Andra</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rajesh Andra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Profile-pic.webp" alt="Rajesh Andra" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rajesh Andra</h1>
+        <!-- <p class="section__text__p2"></p> -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/105sQicPC530x34NKqDojyF3B0PRO9rvi')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/Rajesh-Andra/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/RajeshAndra'"
+          />
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#about'" />
+
+    </section>
+    <!-- Only changes shown, retain the original structure like before -->
+<!-- START - Update inside <body> -->
+
+<!-- Updated About Section -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="about-details-container">
+      <div class="about-containers" style="margin-bottom: 1rem;">
+        
+        <div class="details-container">
+          <img src="assets\school-solid.svg" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>BTech in Computer Science and Engineering<br />Specialization in AI & ML<br />VIT-AP, CGPA: 9.13</p>
+        </div>
+
+        <div class="details-container">
+          <img src="assets\trophy-solid.svg" alt="Internship" class="icon" />
+          <h3>Internship</h3>
+          <p>Student Intern at Edubot : February, 2025 - Present</p>
+          <p>ML Intern at SukhVriddhi : June, 2024 - January, 2025</p>
+        </div>
+
+      </div>
+
+      <div class="about-containers" style="margin-top: 1rem;">
+
+        <div class="details-container">
+          <img src="assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>4+ years in Python</p>
+          <p>3+ years in ML and DL</p>
+          <p>1+ years in LLMs and fine-tuning</p>
+        </div>
+        
+        <div class="details-container">
+          <img src="assets/education.png" alt="Leadership" class="icon" />
+          <h3>Leadership and Activities</h3>
+          <p>Technical Manager for The Machine Learning Club</p>
+          <p>Organized 2 Hackathons and multiple technical events in University</p>
+        </div>
+
+      </div>
+      
+      <div class="text-container">
+        <p>
+          Hello! I’m Rajesh Andra, a dedicated Machine Learning enthusiast pursuing Computer Science with a specialization in AI & ML at VIT-AP. I love building intelligent solutions using deep learning, computer vision, and modern ML techniques. I’ve developed systems in areas ranging from self-driving cars to generative AI models.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+</section>
+
+<!-- Updated Experience Section -->
+<section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills and Expertise</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Technical Skills</h2>
+        <div class="article-container">
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Python</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Java</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>MySQL</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Amazon Web Services</h3></div></article>
+        </div>
+      </div>
+      
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frameworks & Libraries</h2>
+        <div class="article-container">
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>TensorFlow, Keras</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>OpenCV</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Scikit-learn</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>NumPy, Pandas</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Flask</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Streamlit</h3></div></article>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">LLM Tools</h2>
+        <div class="article-container">
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>PyTorch</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>LangChain</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Hugging Face</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>FAISS</h3></div></article>
+          
+        </div>
+      </div>
+      
+      <div class="details-container">
+        <h2 class="experience-sub-title">AI Concepts</h2>
+        <div class="article-container">
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>RAGs</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>LLM Fine-Tuning</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>Transformer models</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>GANs, Diffusion</h3></div></article>
+          <article><img src="assets/Bullet-point.webp" class="icon" /><div><h3>NLP</h3></div></article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-content">
+        <h2>Hairstyle Recommendation</h2>
+        <p class="project-description">A deep learning system to suggest hairstyles based on face shape and gender.</p>
+        <a href="https://github.com/RajeshAndra/Hair-Style-Recommendation" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h2>Ask AI</h2>
+        <p class="project-description">A RAG-based chatbot that answers queries using contextual document knowledge.</p>
+        <a href="https://github.com/RajeshAndra/Ask-AI" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h2>Flower Generation</h2>
+        <p class="project-description">A diffusion model to generate realistic flower images from scratch.</p>
+        <a href="https://github.com/RajeshAndra/Flower-Image-Generation-Using-Diffusion" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-content">
+        <h2>AI Nutrition Web App</h2>
+        <p class="project-description">A Flask web app that estimates nutritional content using food images.</p>
+        <a href="https://github.com/RajeshAndra/AI-Nutrition-App" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h2>Rag Based Discord Bot</h2>
+        <p class="project-description">A context-aware Discord bot built using Retrieval-Augmented Generation.</p>
+        <a href="https://github.com/RajeshAndra/rag-discord-bot" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h2>GNN & PPO Based Lunar Landing</h2>
+        <p class="project-description">Simulates a lunar lander using Graph Neural Nets and reinforcement learning.</p>
+        <a href="https://github.com/RajeshAndra/GNN-and-PPO-based-Lunar-Landing" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+
+    <div class="contact-info-container">
+      <img src="./assets/email.png" class="icon contact-icon email-icon" />
+      <p><a href="mailto:rajurajesh6742@gmail.com">rajurajesh6742@gmail.com</a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" class="icon contact-icon" />
+      <p><a href="https://linkedin.com/in/Rajesh-Andra">LinkedIn</a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./assets/github.png" class="icon contact-icon" />
+      <p><a href="https://github.com/RajeshAndra">GitHub</a></p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright © 2025 Rajesh Andra. All Rights Reserved.</p>
+</footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
